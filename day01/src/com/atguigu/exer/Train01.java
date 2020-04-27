@@ -1,5 +1,8 @@
-package com.atguigu.java8;
+package com.atguigu.exer;
 
+import com.atguigu.java8.Employee;
+import com.atguigu.java8.MyFunction;
+import com.atguigu.java8.MyFunction2;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -10,6 +13,7 @@ import java.util.function.Function;
 
 /**
  * 视频4. 尚硅谷_Java8新特性_Lambda 练习, 以及后来用方法引用的写法
+ * 视频6. 尚硅谷_Java8新特性_方法引用与构造器引用
  */
 public class Train01 {
 

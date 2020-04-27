@@ -14,3 +14,33 @@ jdk8新特性总结
 ### 3. Java8新特性_Lambda 基础语法
 ### 5. Java8新特性_四大内置核心函数式接口
 ### 6. Java8新特性_方法引用与构造器引用与数组引用
+### 7. Java8新特性_创建 Stream
+	1. 创建 Stream
+	2. 中间操作
+	3. 终止操作(终端操作)
+### 8. Java8新特性_Stream中间操作_筛选与切片
+	filter——接收 Lambda ， 从流中排除某些元素。
+	limit——截断流，使其元素不超过给定数量。
+	skip(n) —— 跳过元素，返回一个扔掉了前 n 个元素的流。若流中元素不足 n 个，则返回一个空流。与 limit(n) 互补
+	distinct——筛选，通过流所生成元素的 hashCode() 和 equals() 去除重复元素
+### 9. Java8新特性_Stream中间操作_映射
+	map——接收 Lambda ， 将元素转换成其他形式或提取信息。接收一个函数作为参数，该函数会被应用到每个元素上，并将其映射成一个新的元素。
+	flatMap——接收一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流,类似于Arraylist的addAll(), 最终只得到一个流
+### 10. Java8新特性_Stream中间操作_排序
+	sorted()——自然排序(Comparable): 按照Comparable接口实现的方式去排, 比如String就实现这个接口
+	sorted(Comparator com)——定制排序, 按自己制定的方式去排
+### 11. Java8新特性_Stream终止操作_查找与匹配
+	allMatch——检查是否匹配所有元素
+	anyMatch——检查是否至少匹配一个元素
+	noneMatch——检查是否没有匹配的元素
+	findFirst——返回第一个元素
+	findAny——返回当前流中的任意元素
+	count——返回流中元素的总个数
+	max——返回流中最大值
+	min——返回流中最小值
+### 12. Java8新特性_Stream终止操作_归约与收集
+	归约reduce(T identity, BinaryOperator) / reduce(BinaryOperator) ——可以将流中元素反复结合起来，得到一个值。
+	map 和reduce 的连接通常称为map-reduce 模式，因Google 用它来进行网络搜索而出名。
+	collect——将流转换为其他形式(比如集合)。接收一个 Collector接口的实现，用于给Stream中元素做汇总的方法
+	多种API调用
+### 13. Java8新特性_Stream API 练习
