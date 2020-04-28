@@ -44,3 +44,18 @@ jdk8新特性总结
 	collect——将流转换为其他形式(比如集合)。接收一个 Collector接口的实现，用于给Stream中元素做汇总的方法
 	多种API调用
 ### 13. Java8新特性_Stream API 练习
+### 14. Java8新特性_并行流与串行流
+	采用“工作窃取”模式（work-stealing）
+### 15. Java8新特性_Optional 容器类
+	 一、Optional 容器类：用于尽量避免空指针异常
+	  	Optional.of(T t) : 创建一个 Optional 实例
+	  	Optional.empty() : 创建一个空的 Optional 实例
+	  	Optional.ofNullable(T t):若 t 不为 null,创建 Optional 实例,否则创建空实例
+	  	isPresent() : 判断是否包含值
+	  	orElse(T t) :  如果调用对象包含值，返回该值，否则返回t
+	  	orElseGet(Supplier s) :如果调用对象包含值，返回该值，否则返回 s 获取的值
+	  	map(Function f): 如果有值对其处理，并返回处理后的Optional，否则返回 Optional.empty()
+	  	flatMap(Function mapper):与 map 类似，要求返回值必须是Optional
+### 16. Java8新特性_接口中的默认方法与静态方法
+	Java 8中允许接口中包含具有具体实现的方法，该方法称为“默认方法”，默认方法使用default关键字修饰
+	Java8 中，接口中允许添加静态方法
