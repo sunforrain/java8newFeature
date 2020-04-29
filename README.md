@@ -59,3 +59,17 @@ jdk8新特性总结
 ### 16. Java8新特性_接口中的默认方法与静态方法
 	Java 8中允许接口中包含具有具体实现的方法，该方法称为“默认方法”，默认方法使用default关键字修饰
 	Java8 中，接口中允许添加静态方法
+### 17. Java8新特性_传统时间格式化的线程安全问题
+	老的时间类API如, TimeZone, SimpleDateFormat等都是可变的, 同时有线程安全问题, 且包也不规范, 放在数个不同包下
+	新的时间类统一放在java.time 包下, 且都是不可变对象, 保证线程安全
+### 18. Java8新特性_新时间与日期 API-本地时间与时间戳
+	LocalDate、LocalTime、LocalDateTime
+	Instant : 时间戳
+	Duration : 用于计算两个“时间”间隔
+	Period : 用于计算两个“日期”间隔
+### 19. Java8新特性_新时间和日期 API-时间校正器
+	TemporalAdjuster : 时间校正器
+### 20. Java8新特性_新时间和日期 API-时间格式化与时区的处理
+	 DateTimeFormatter : 解析和格式化日期或时间
+	 带时区的时间为分别为：ZonedDate、ZonedTime、ZonedDateTime
+### 21. Java8新特性_重复注解与类型注解
